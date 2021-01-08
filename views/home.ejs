@@ -1,0 +1,19 @@
+ <%- include("./partials/header.ejs") %>
+    
+    <h1>THIS IS HOME PAGE</h1>
+    <p>Welcome to the homepage!</p>
+
+    <form action="/index" method="POST">
+    <label for="Name">
+        Kitten Name
+        <input type="text" name="kittenName" placeholder="kitten name" />
+    </label>
+    <label for="Desc">
+        Kitten description
+        <input type="text" name="kittenDes" placeholder="kitten desc." />
+    </label>
+    <button type="submit">SUBMIT</button>
+    </form>
+    
+<%- include("./partials/footer.ejs") %>
+
